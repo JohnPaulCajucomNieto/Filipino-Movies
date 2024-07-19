@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style1.css">
+    <link rel="shortcut icon" href="../IMAGES/amazing-animal-beautiful-beautifull.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/gallary.css">
+    <title>Gallery</title>
+    <style>
+        footer{
+            position: inherit;
+        }
+    </style>
+</head>
+<body style="background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);"> 
+    <nav class="navbar">
+        <img style="box-shadow: none;" class="logo" src="../IMG/lgs.png" alt="" srcset="">
+        <a href="../PHP/data_listing.php">DIARY LISTING</a>
+        <a href="../HTML/data_entry.html">DATA ENTRY</a>
+        <a href="../HTML/gallary.html">GALLERY</a>
+        <a href="../HTML/profile.html">PROFILE</a>
+    </nav>
+    <form>
+        <label class="upl" style="width: 9%; margin-left: 680px; margin-bottom: 300px;" for="photo">
+            UPLOAD IMAGES
+        </label>
+        <input accept="image/*" type="file" id="photo" name="photo" multiple>
+    </form>
+    <div id="image-container"></div>
+    
+    <script>
+        var uploadedFiles = []; 
+
+    document.getElementById('photo').onchange = function () {
+        var imageContainer = document.getElementById('image-container');
+
+        for (var i = 0; i < this.files.length; i++) {
+            var src = URL.createObjectURL(this.files[i]);
+            var image = document.createElement('img');
+            image.src = src;
+            imageContainer.appendChild(image);
+
+        uploadedFiles.push(this.files[i]);
+    }
+};
+    </script>
+</body>
+</html>

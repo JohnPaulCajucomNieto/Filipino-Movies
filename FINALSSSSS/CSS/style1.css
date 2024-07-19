@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Russo+One&display=swap');
+.navbar {
+    background-color: white ; 
+    overflow: hidden;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+  }
+  .navbar a {
+    float: right;
+    font-size: 13px;
+    color: black;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 25px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+   
+   
+  }
+  .navbar a:hover {
+   color:  #b92b27;
+  }
+  .logo{
+    width: 250px;
+    height: 120px;
+    margin-top: -16px;
+    margin-left: -8px;
+  }
+  body{
+    padding: 0;
+    bottom: 0;
+    margin: 0;
+    height: 150vh;
+  }
+  h1{
+   padding-top: 200px;
+   color: white;
+   font-family: 'Rubik Mono One', sans-serif;
+  }
+  .container{
+    text-align: center;
+    padding-bottom: 150px;
+    margin-top: -60px;
+    
+  }
+  .main{
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url('../IMG/tree.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: -350px;
+    
+  }
+  .p{
+    box-shadow: 10px 10px 10px 10px black;
+    width: 850px;
+    padding-top: 50px; 
+    padding-bottom: 150px; 
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 300px;
+    margin-top: 50px;
+    font-size: 18PX;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 5px;
+    color: white;
+
+  }
+  .ps{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 18PX;
+    margin-left: 350px;
+    margin-top: -100px;
+    
+  }
+ .pse{
+  background-color:  #b92b27;
+  width: 200px;
+  color: white;
+  padding: 5px 5px 5px 5px;
+  margin-left: 350px;
+  
+ }
+ .con-profile{
+  display: flex;
+  height: 250px;
+  gap: 350px;
+  margin-left: 50px;
+  margin-right: 50px;  
+  margin-top: 150px;
+  box-shadow: 10px 10px 10px 10px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 250px;
+  
+ }
+ .SEC2{
+  text-align: center;
+  margin-top: 280PX; 
+  color: black;
+ 
+ }
+
+.card {
+    position: relative;
+    width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    margin:  56px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+}
+
+.card-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0.5), 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.card:hover{
+  background-color:  #b92b27;
+  color: white;
+}
+.card-image img {
+    width: 100%;
+    transform: scale(1.2);
+}
+
+p {
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.name {
+    margin-top: 80px;
+    font-size: 1.4em;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin: 12px 8px;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.4s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button i {
+    color: #fff;
+    font-size: 1.4em;
+}
+
+/* Social media colors */
+button.github {
+    background-color: #24292e;
+} 
+
+button.twitter {
+    background-color: #1da1f2;
+}
+
+button.pinterest {
+    background-color: #d3263a;
+} 
+.mains{
+  margin-top: -595px;
+}
+footer {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 94.5%;
+  padding: 40PX 40PX 40PX 40PX;
+  margin-top: 80px;
+}

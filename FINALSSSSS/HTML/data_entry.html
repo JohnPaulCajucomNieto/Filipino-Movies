@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style1.css">
+    <link rel="shortcut icon" href="../IMAGES/amazing-animal-beautiful-beautifull.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/data_entry.css">
+    <title>Data Entry</title>
+</head>
+    <style>
+        body{
+            height: 50vh;
+            height: 10vh;
+    background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+        }
+        footer{
+            position: relative;
+            bottom: -100px;
+        }
+    </style>
+<body>
+    <nav class="navbar">
+        <img style="box-shadow: none;" class="logo" src="../IMG/lgs.png" alt="" srcset="">
+        <a href="../HTML/data_listing.php">DIARY LISTING</a>
+        <a href="../HTML/data_entry.html">DATA ENTRY</a>
+        <a href="../HTML/gallary.html">GALLERY</a>
+        <a href="../HTML/profile.html">PROFILE</a>
+    </nav>
+    <form action="../PHP/value.php" method="post" id="data">
+        <label  >DATA ENTRY</label><br>
+        <label for="category">CATEGORY: </label>
+    <select id="category" name="category">
+      <option value="Home">HOME</option>
+      <option value="Personal">PERSONAL</option>
+      <option value="School">SCHOOL</option>
+      <option value="Peers">PEERS</option>
+      <option value="Others">OTHERS</option>
+    </select><br>
+        <textarea name="content" placeholder="Enter your Feelings!"></textarea><br>
+        <input type="date" name="date" id="date"><br>
+        <input type="submit" name="submit" id="submit" value="SUBMIT">
+    </form>
+    <div id="image-container"></div>
+    <footer>
+        &copy; 2023 UNLOCKING MEMORIES
+    </footer>
+</body>
+</html>

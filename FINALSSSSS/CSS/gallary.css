@@ -1,0 +1,45 @@
+img {
+    width: 15vw;
+    height: 30vh;
+    margin-right: 4vw;
+    border-radius: 10px;
+    margin-top: 2vh;
+    cursor: pointer;
+}
+
+img:valid {
+    width: 70vw;
+    height: 70vh;
+}
+
+#image-container {
+    width: 100vw;
+    border: ipx solid black;
+
+    padding-left: 5vw;
+    margin-top: 14vh;
+}
+
+#photo {
+    display: none;
+}
+
+label {
+    border: 2px solid #000000;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin-top: 150vh;
+    position: fixed;
+    margin-left: 90vw;
+    bottom: 50px;
+}
+
+label:hover {
+    background-color: 
+    #b92b27;
+    color: white;
+}
+.upl{
+    margin-left: -500px;
+}
